@@ -4,7 +4,9 @@
   "description": "The backend of smart perfumes collection platform",
   "main": "src/app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec ts-node src/app.ts",
+    "build": "tsc",
+    "start": "node build/index.js"
   },
   "author": "Alaa Barka",
   "license": "ISC",
