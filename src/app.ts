@@ -20,11 +20,11 @@ app
 
     appDataSource
       .initialize()
-      .then((res) => {
+      .then((res: any) => {
         //write the rest of the code here !
         console.log("Connected to the database ! ")
       })
-      .catch((e) => {
+      .catch((e: any) => {
         console.log(e)
       })
   })
