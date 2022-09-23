@@ -53,5 +53,5 @@ class Admins extends BaseEntity {
 export default Admins
 /*
 
-create table admins (cin primary key varchar  , fullname varchar not null , email varchar not null unique , phone varchar not null unique , sex gender not null , adress  varchar not null , createdat date not null ,role adminrole);
-*/
+create type roleadmin as enum ('seller' , 'prodstock' , 'boss');
+create table admins(cin varchar primary key, fullname varchar not null, email varchar not null unique, phone varchar not null unique, adress varchar not null, createdat date not null, role roleadmin not null, gender sex not null);*/
