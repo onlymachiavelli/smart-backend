@@ -51,3 +51,7 @@ class Admins extends BaseEntity {
 }
 
 export default Admins
+/*
+
+create table admins (cin primary key varchar  , fullname varchar not null , email varchar not null unique , phone varchar not null unique , sex gender not null , adress  varchar not null , createdat date not null ,role adminrole);
+*/
